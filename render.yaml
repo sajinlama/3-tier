@@ -1,0 +1,11 @@
+
+services:
+ - types: web
+   name : backend
+   env  : docker
+   dockerfilePath : ./backend/dockerfile
+   dockercontex : ./backend
+   evnVars :
+     - keys : MONGO_URi
+     sync :fasle
+     autoDeploy :true
